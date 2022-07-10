@@ -80,3 +80,6 @@ autocmd VimEnter * NERDTree | wincmd p
 augroup auto_commands
     autocmd BufWrite *.py call CocAction('format')
 augroup END
+
+" terminal tonormal mode change to escape key
+:tnoremap <Esc> <C-\><C-n>
