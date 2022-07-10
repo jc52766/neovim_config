@@ -55,6 +55,10 @@ call plug#begin('~/.config/nvim/plugged')
 
     " color schemes
     Plug 'morhetz/gruvbox'
+    
+    " send to window
+    Plug 'karoliskoncevicius/vim-sendtowindow'
+    
 call plug#end()
 
 " colorscheme
