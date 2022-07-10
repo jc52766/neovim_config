@@ -59,6 +59,9 @@ call plug#begin('~/.config/nvim/plugged')
     " send to window
     Plug 'karoliskoncevicius/vim-sendtowindow'
     
+    "fugitive for git
+    Plug 'tpope/vim-fugitive'
+    
 call plug#end()
 
 " colorscheme
