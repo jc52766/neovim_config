@@ -55,13 +55,23 @@ call plug#begin('~/.config/nvim/plugged')
 
     " color schemes
     Plug 'morhetz/gruvbox'
-    
-    " send to window
+
+    "send to window
     Plug 'karoliskoncevicius/vim-sendtowindow'
-    
+
     "fugitive for git
     Plug 'tpope/vim-fugitive'
-    
+
+    "treesitter
+    "Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}
+    "Plug 'nvim-treesitter/nvim-treesitter-context'
+
+    " indent visual display
+    Plug 'nathanaelkane/vim-indent-guides'
+
+    " easy motion
+    Plug 'easymotion/vim-easymotion'
+
 call plug#end()
 
 " colorscheme
@@ -86,3 +96,6 @@ augroup END
 
 " terminal tonormal mode change to escape key
 :tnoremap <Esc> <C-\><C-n>
+
+" indent display on startup
+let g:indent_guides_enable_on_vim_startup = 1
